@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref } from 'vue'
 
-export const useFilterCountry = defineStore('filterCountry', () => {
+export const useFilterStore = defineStore('filterCountry', () => {
   const country = ref('')
   const score = ref('')
   const isLoading = ref(false)

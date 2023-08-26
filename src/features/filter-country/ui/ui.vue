@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SelectInput } from '@/shared/ui'
-import { useFilterCountry } from '@/shared/stores'
+import { useFilterStore } from '@/shared/stores'
 import { computed, onBeforeMount, ref } from 'vue'
 import { storeToRefs } from 'pinia'
 import { getCountries } from '@/shared/api'
@@ -12,7 +12,7 @@ onBeforeMount(async () => {
   options.value = await getCountries()
 })
 
-const store = useFilterCountry()
+const store = useFilterStore()
 const { country } = storeToRefs(store)
 
 const computedModel = computed({

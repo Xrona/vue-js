@@ -3,7 +3,7 @@ import { SelectInput } from '@/shared/ui'
 import { computed, onBeforeMount, ref } from 'vue'
 import type { ScoreType } from '@/shared/types/ScoreType'
 import { getScores } from '@/shared/api'
-import { useFilterCountry } from '@/shared/stores'
+import { useFilterStore } from '@/shared/stores'
 import { storeToRefs } from 'pinia'
 
 const options = ref<ScoreType[]>()
@@ -12,7 +12,7 @@ onBeforeMount(async () => {
   options.value = await getScores()
 })
 
-const store = useFilterCountry()
+const store = useFilterStore()
 const { score } = storeToRefs(store)
 
 const computedModel = computed({
