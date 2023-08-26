@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+}
+
+.content {
+  max-width: 400px;
+  margin: 0 auto  ;
+  background-color: var(--color-background-soft);
+  border-radius: 16px;
+  padding: 16px;
+  transform-origin: top center;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
+
+.options {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+
+    .caption {
+      color: var(--color-hover);
+    }
+  }
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

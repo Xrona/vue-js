@@ -1,0 +1,23 @@
+.container {
+  max-height: 60vh;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.list {
+  transform-origin: top center;
+  padding: 0;
+}
+
+.user {
+  list-style-type: none;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}

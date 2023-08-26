@@ -1,0 +1,45 @@
+@import './base.scss';
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+
+
+.select-down-enter-active,
+.select-down-leave-active {
+  transition: scale ease .4s, opacity ease-out .3s;
+}
+
+.select-down-enter-from,
+.select-down-leave-to {
+  scale: 1 0;
+  opacity: 0;
+}
+
+.select-right-enter-active,
+.select-right-leave-active {
+  transition: scale ease .4s, opacity ease-out .3s;
+}
+
+.select-right-enter-from,
+.select-right-leave-to {
+  scale: 0 1;
+  opacity: 0;
+}

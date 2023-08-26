@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  background-color: var(--color-background-soft);
+  padding: 8px 12px;
+  border-radius: 4px;
+
+  img:first-child {
+    flex-shrink: 0;
+  }
+}
+
+.link {
+  position: absolute;
+  inset: 0;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  line-height: 1rem;
+
+  :global(.grey--text) {
+    color: var(--color-heading)
+  }
+  :global(.text--lighten-1) {
+    font-weight: 300;
+  }
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1rem;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  height: 2rem;
+  :global(.text--primary) {
+    color: var(--color-hover);
+  }
+}

@@ -1,0 +1,1 @@
+export {routerProvider} from './routerProvider'
